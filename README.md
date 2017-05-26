@@ -1,13 +1,15 @@
 # jQuery-vertical-ajust
-jQuery vertical ajustment plugin
+Here is a jQuery vertical ajustment plugin.
 
-If you need ajust this list:
+If you need transform this list:
 
 ![inline-block list](vertical-empties.png)
 
-to this one:
+to this one, where inline blocks fit vertically to each other:
 
 ![ajausted inline-block list](vertical-ajusted.png)
+
+You need to do 3 easy steps.
 
 ## STEP 1 - get a plugin
 
@@ -23,6 +25,8 @@ Attach plugin to the header of your html code. And of course don't forget to inc
 ```
 
 ## STEP 2 - define your list
+
+For example it can be something like that:
 
 ```html
 <div class="list">
@@ -42,7 +46,7 @@ Attach plugin to the header of your html code. And of course don't forget to inc
 	display: inline-block; /* important! */
 	vertical-align: top; /* important! */
 	
-  /* few css lines for make-up */
+        /* few css lines for make-up */
 	height: 100px;
 	margin: 10px;
 	text-align: center;
@@ -52,10 +56,11 @@ Attach plugin to the header of your html code. And of course don't forget to inc
 </style>
 
 <script>
-
 	(function ($) {
-		/*	Prepare example list:
+		/*
+		    Prepare example list:
 		    Add random height and number labels.
+		    This piece of code has only task to build sample of list
 		*/
 		
 		$(".item").each(function(index) {
@@ -80,3 +85,5 @@ Attach plugin to the header of your html code. And of course don't forget to inc
 }) (jQuery);
 </script>
 '''
+
+You can check full [example here](exmaple-vertical-ajust-usage.html)
