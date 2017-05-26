@@ -87,3 +87,5 @@ For example it can be something like that:
 ```
 
 You can check full [example here](exmaple-vertical-ajust-usage.html)
+
+Additional info you can get on [my blog](http://shra.ru/2017/05/vertikalnoe-uplotnenie-spiska-skriptom/).
