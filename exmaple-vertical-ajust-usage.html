@@ -1,0 +1,85 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery.verticalAjust.js"></script>
+<body>
+
+<div class="list">
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+</div>
+<style>
+
+.item {
+	/* same width */
+	width: 150px;
+	display: inline-block; /* important! */
+	vertical-align: top; /* important! */
+	
+	height: 100px;
+	margin: 10px;
+	text-align: center;
+	background: rgba(0, 128, 0, 0.5);
+	font-size: 40px;
+}
+
+
+</style>
+
+<script>
+
+	(function ($) {
+		/*	Prepare sample list.
+		    Add random height and number labels.
+		*/
+		
+		$(".item").each(function(index) {
+			var ht = getRandomInt(5, 15) * 10;
+			$(this).css({'height' : ht, 'lineHeight' : ht + 'px' }).html(index);
+			
+		});
+	
+		function getRandomInt(min, max)
+		{
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+		
+		/* plugin usage */
+		$.fn.verticalAjust('attach', '.list .item');
+
+	}) (jQuery);
+
+</script>
+</body>
+</html>
