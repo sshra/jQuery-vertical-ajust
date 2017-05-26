@@ -84,6 +84,6 @@ For example it can be something like that:
    $.fn.verticalAjust('attach', '.list .item');
 }) (jQuery);
 </script>
-'''
+```
 
 You can check full [example here](exmaple-vertical-ajust-usage.html)
